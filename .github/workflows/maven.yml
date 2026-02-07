@@ -9,8 +9,8 @@
 name: Automationpracticepl WorkFlow
 
 on:
-   schedule:
-   - cron: 00 18 * * *
+  schedule:
+    - cron: '0 18 * * *'
   push:
     branches: [ "master" ]
   pull_request:
@@ -18,33 +18,35 @@ on:
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v4
-    - name: Set up JDK 17
-      uses: actions/setup-java@v4
-      with:
-        java-version: '17'
-        distribution: 'temurin'
-        cache: maven
-    - name: Running Automation Test Framework with Maven
-      run: mvn test-x -Dbrowser=chrome -DisLambdaTest=true -DisHeadless=false
-    - name: Upload Test logs
-      if: always()
-      uses: actions/upload-artifact@v6.0.0
-      with:
-      name: Test logs
-      path: logs/
+      - name: Checkout source
+        uses: actions/checkout@v4
 
-    - name: Upload Test Reports
-      if: always()
-      uses: actions/upload-artifact@v6.0.0
-      with:
-      name: Test Reports
-      path: report.html
-    
-    - name: Test Execution status
-    run: echo "Test Execution Completed"
+      - name: Set up JDK 17
+        uses: actions/setup-java@v4
+        with:
+          java-version: '17'
+          distribution: 'temurin'
+          cache: maven
 
+      - name: Running Automation Test Framework with Maven
+        run: mvn test -Dbrowser=chrome -DisLambdaTest=true -DisHeadless=false
+
+      - name: Upload Test logs
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: Test logs
+          path: logs/
+
+      - name: Upload Test Reports
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: Test Reports
+          path: report.html
+
+      - name: Test Execution status
+        run: echo "Test Execution Completed"
