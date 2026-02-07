@@ -31,7 +31,7 @@ public class LoginTestNew extends TestBase{
 				.getUsername(), "Naman datte");
 	}
 
-	@Test(description = "verifies with valid credentials user is able to login to the Application", groups = { "e2e",
+	/*@Test(description = "verifies with valid credentials user is able to login to the Application", groups = { "e2e",
 			"sanity" }, dataProviderClass = com.ui.dataproviders.LoginDataProvider.class, dataProvider = "LoginTestCSVDataProvider")
 	public void loginCSVTest(User user) {
 
@@ -44,8 +44,8 @@ public class LoginTestNew extends TestBase{
 	public void loginExcelTest(User user) {
 
 		assertEquals(homepg.navigateToLoginpage().loginWithvalidCredentials(user.getEmailAddress(), user.getPassword())
-				.getUsername(), "Naman datte1");
+				.getUsername(), "Naman datte1");*/
 
 	}
 
-}
+

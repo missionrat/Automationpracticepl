@@ -19,12 +19,17 @@ public final class HomePage extends BrowserUtility {
 	Logger logger = LoggerUtility.getLogger(this.getClass());
 	private static final By SIGN_IN_LINK_LOCATOR = By.xpath("//a[contains(text(),'Sign')]");
 
-	public HomePage(Browser browserName,boolean isHeadless) {
-		super(browserName,isHeadless);
+	public HomePage(Browser browserName, boolean isHeadless) {
+		super(browserName, isHeadless);
 		// navigateToApplication(readProperty(QA, "URL"));
 		navigateToApplication(JSONUtility.readJSON(QA).getUrl());
 		// to call the parent class constructor from the child class constructor we use
 		// super keyword
+	}
+
+	public HomePage(WebDriver driver) {
+		super(driver); // To Call the Parent Class constructor from the child constructor
+		navigateToApplication(JSONUtility.readJSON(QA).getUrl());
 	}
 
 	public LoginPage navigateToLoginpage() {
