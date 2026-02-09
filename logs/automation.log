@@ -1,56 +1,31 @@
-2026-02-07 12:05:36 [main] INFO com.ui.listeners.TestListener Test Suite Started 
-2026-02-07 12:05:37 [TestNG-test-UI Automation Test-1] INFO com.ui.tests.LoginTestNew Load the homepage of the website 
-2026-02-07 12:05:37 [TestNG-test-UI Automation Test-1] INFO com.ui.pages.HomePage Launching browser forCHROME 
-2026-02-07 12:05:41 [TestNG-test-UI Automation Test-1] INFO com.ui.pages.HomePage Navigating to the Website:https://automationpractice.techwithjatin.com/ 
-2026-02-07 12:05:47 [TestNG-test-UI Automation Test-1] INFO com.ui.listeners.TestListener loginTest 
-2026-02-07 12:05:47 [TestNG-test-UI Automation Test-1] INFO com.ui.listeners.TestListener verifies with valid credentials user is able to login to the Application 
-2026-02-07 12:05:47 [TestNG-test-UI Automation Test-1] INFO com.ui.listeners.TestListener [e2e, sanity] 
-2026-02-07 12:05:47 [TestNG-test-UI Automation Test-1] INFO com.ui.pages.HomePage Trying to perform click actio on sign in page 
-2026-02-07 12:05:47 [TestNG-test-UI Automation Test-1] INFO com.ui.pages.HomePage Finding element with the locatorBy.xpath: //a[contains(text(),'Sign')] 
-2026-02-07 12:05:47 [TestNG-test-UI Automation Test-1] INFO com.ui.pages.HomePage Element found and performing click actionBy.xpath: //a[contains(text(),'Sign')] 
-2026-02-07 12:05:48 [TestNG-test-UI Automation Test-1] INFO com.ui.pages.LoginPage Finding element with the locatorBy.xpath: //input[@id='email'] 
-2026-02-07 12:05:49 [TestNG-test-UI Automation Test-1] INFO com.ui.pages.LoginPage Element found and clearing the textBy.xpath: //input[@id='email'] 
-2026-02-07 12:05:49 [TestNG-test-UI Automation Test-1] INFO com.ui.pages.LoginPage Finding element with the locatorBy.xpath: //input[@id='email'] 
-2026-02-07 12:05:49 [TestNG-test-UI Automation Test-1] INFO com.ui.pages.LoginPage Element found and now enter textspmaverick@gmail.com 
-2026-02-07 12:05:49 [TestNG-test-UI Automation Test-1] INFO com.ui.pages.LoginPage Finding element with the locatorBy.xpath: //input[@id='passwd'] 
-2026-02-07 12:05:49 [TestNG-test-UI Automation Test-1] INFO com.ui.pages.LoginPage Element found and clearing the textBy.xpath: //input[@id='passwd'] 
-2026-02-07 12:05:49 [TestNG-test-UI Automation Test-1] INFO com.ui.pages.LoginPage Finding element with the locatorBy.xpath: //input[@id='passwd'] 
-2026-02-07 12:05:49 [TestNG-test-UI Automation Test-1] INFO com.ui.pages.LoginPage Element found and now enter textpassword 
-2026-02-07 12:05:49 [TestNG-test-UI Automation Test-1] INFO com.ui.pages.LoginPage Finding element with the locatorBy.xpath: //button[@id='SubmitLogin'] 
-2026-02-07 12:05:50 [TestNG-test-UI Automation Test-1] INFO com.ui.pages.LoginPage Element found and performing click actionBy.xpath: //button[@id='SubmitLogin'] 
-2026-02-07 12:05:50 [TestNG-test-UI Automation Test-1] INFO com.ui.pages.MyAccountPage Finding element with the locatorBy.xpath: //span[normalize-space()='Naman datte'] 
-2026-02-07 12:05:50 [TestNG-test-UI Automation Test-1] ERROR com.ui.listeners.TestListener loginTest FAILED 
-2026-02-07 12:05:50 [TestNG-test-UI Automation Test-1] ERROR com.ui.listeners.TestListener no such element: Unable to locate element: {"method":"xpath","selector":"//span[normalize-space()='Naman datte']"}
-  (Session info: chrome=145.0.7632.46)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.34.0', revision: '707dcb4246*'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [6706e43f9cbac16ecdf6c86b5692c935, findElement {using=xpath, value=//span[normalize-space()='Naman datte']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 145.0.7632.46, chrome: {chromedriverVersion: 145.0.7632.46 (9b899469dedf..., userDataDir: C:\Users\DELL\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56972}, goog:processID: 14372, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56972/devtoo..., se:cdpVersion: 145.0.7632.46, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 6706e43f9cbac16ecdf6c86b5692c935 
-2026-02-07 12:05:50 [TestNG-test-UI Automation Test-1] INFO com.ui.listeners.TestListener Capturing screenshot for the failed tests 
-2026-02-07 12:05:51 [TestNG-test-UI Automation Test-1] INFO com.ui.listeners.TestListener Attaching the screenshot to the html report 
-2026-02-07 12:05:51 [TestNG-test-UI Automation Test-1] INFO com.ui.tests.LoginTestNew Load the homepage of the website 
-2026-02-07 12:05:51 [TestNG-test-UI Automation Test-1] INFO com.ui.pages.HomePage Launching browser forCHROME 
-2026-02-07 12:05:53 [TestNG-test-UI Automation Test-1] INFO com.ui.pages.HomePage Navigating to the Website:https://automationpractice.techwithjatin.com/ 
-2026-02-07 12:05:57 [TestNG-test-UI Automation Test-1] INFO com.ui.listeners.TestListener loginTest 
-2026-02-07 12:05:57 [TestNG-test-UI Automation Test-1] INFO com.ui.listeners.TestListener verifies with valid credentials user is able to login to the Application 
-2026-02-07 12:05:57 [TestNG-test-UI Automation Test-1] INFO com.ui.listeners.TestListener [e2e, sanity] 
-2026-02-07 12:05:57 [TestNG-test-UI Automation Test-1] INFO com.ui.pages.HomePage Trying to perform click actio on sign in page 
-2026-02-07 12:05:57 [TestNG-test-UI Automation Test-1] INFO com.ui.pages.HomePage Finding element with the locatorBy.xpath: //a[contains(text(),'Sign')] 
-2026-02-07 12:06:00 [TestNG-test-UI Automation Test-1] INFO com.ui.pages.HomePage Element found and performing click actionBy.xpath: //a[contains(text(),'Sign')] 
-2026-02-07 12:06:01 [TestNG-test-UI Automation Test-1] INFO com.ui.pages.LoginPage Finding element with the locatorBy.xpath: //input[@id='email'] 
-2026-02-07 12:06:01 [TestNG-test-UI Automation Test-1] INFO com.ui.pages.LoginPage Element found and clearing the textBy.xpath: //input[@id='email'] 
-2026-02-07 12:06:01 [TestNG-test-UI Automation Test-1] INFO com.ui.pages.LoginPage Finding element with the locatorBy.xpath: //input[@id='email'] 
-2026-02-07 12:06:01 [TestNG-test-UI Automation Test-1] INFO com.ui.pages.LoginPage Element found and now enter textneyef43651@azeriom.com 
-2026-02-07 12:06:01 [TestNG-test-UI Automation Test-1] INFO com.ui.pages.LoginPage Finding element with the locatorBy.xpath: //input[@id='passwd'] 
-2026-02-07 12:06:01 [TestNG-test-UI Automation Test-1] INFO com.ui.pages.LoginPage Element found and clearing the textBy.xpath: //input[@id='passwd'] 
-2026-02-07 12:06:01 [TestNG-test-UI Automation Test-1] INFO com.ui.pages.LoginPage Finding element with the locatorBy.xpath: //input[@id='passwd'] 
-2026-02-07 12:06:01 [TestNG-test-UI Automation Test-1] INFO com.ui.pages.LoginPage Element found and now enter textnaman@2026 
-2026-02-07 12:06:01 [TestNG-test-UI Automation Test-1] INFO com.ui.pages.LoginPage Finding element with the locatorBy.xpath: //button[@id='SubmitLogin'] 
-2026-02-07 12:06:01 [TestNG-test-UI Automation Test-1] INFO com.ui.pages.LoginPage Element found and performing click actionBy.xpath: //button[@id='SubmitLogin'] 
-2026-02-07 12:06:02 [TestNG-test-UI Automation Test-1] INFO com.ui.pages.MyAccountPage Finding element with the locatorBy.xpath: //span[normalize-space()='Naman datte'] 
-2026-02-07 12:06:02 [TestNG-test-UI Automation Test-1] INFO com.ui.pages.MyAccountPage Element found and now returning  the visible textNaman datte 
-2026-02-07 12:06:02 [TestNG-test-UI Automation Test-1] INFO com.ui.listeners.TestListener loginTest PASSED 
-2026-02-07 12:06:03 [main] INFO com.ui.listeners.TestListener Test Suite Completed 
+2026-02-09 09:02:49 [main] INFO com.ui.listeners.TestListener Test Suite Started 
+2026-02-09 09:02:49 [main] INFO com.ui.tests.SearchProductTest Load the homepage of the website 
+2026-02-09 09:02:49 [main] INFO com.ui.pages.HomePage Launching browser forCHROME 
+2026-02-09 09:02:52 [main] INFO com.ui.pages.HomePage Navigating to the Website:https://automationpractice.techwithjatin.com/ 
+2026-02-09 09:02:58 [main] INFO com.ui.pages.HomePage Trying to perform click actio on sign in page 
+2026-02-09 09:02:58 [main] INFO com.ui.pages.HomePage Finding element with the locatorBy.xpath: //a[contains(text(),'Sign')] 
+2026-02-09 09:02:58 [main] INFO com.ui.pages.HomePage Element found and performing click actionBy.xpath: //a[contains(text(),'Sign')] 
+2026-02-09 09:02:59 [main] INFO com.ui.pages.LoginPage Finding element with the locatorBy.xpath: //input[@id='email'] 
+2026-02-09 09:02:59 [main] INFO com.ui.pages.LoginPage Element found and clearing the textBy.xpath: //input[@id='email'] 
+2026-02-09 09:02:59 [main] INFO com.ui.pages.LoginPage Finding element with the locatorBy.xpath: //input[@id='email'] 
+2026-02-09 09:02:59 [main] INFO com.ui.pages.LoginPage Element found and now enter textneyef43651@azeriom.com 
+2026-02-09 09:02:59 [main] INFO com.ui.pages.LoginPage Finding element with the locatorBy.xpath: //input[@id='passwd'] 
+2026-02-09 09:02:59 [main] INFO com.ui.pages.LoginPage Element found and clearing the textBy.xpath: //input[@id='passwd'] 
+2026-02-09 09:02:59 [main] INFO com.ui.pages.LoginPage Finding element with the locatorBy.xpath: //input[@id='passwd'] 
+2026-02-09 09:02:59 [main] INFO com.ui.pages.LoginPage Element found and now enter textnaman@2026 
+2026-02-09 09:02:59 [main] INFO com.ui.pages.LoginPage Finding element with the locatorBy.xpath: //button[@id='SubmitLogin'] 
+2026-02-09 09:02:59 [main] INFO com.ui.pages.LoginPage Element found and performing click actionBy.xpath: //button[@id='SubmitLogin'] 
+2026-02-09 09:03:00 [main] INFO com.ui.listeners.TestListener veerifyProductSearchTest 
+2026-02-09 09:03:00 [main] INFO com.ui.listeners.TestListener Verify if the logged in user is able to search for a product and correct products search 
+2026-02-09 09:03:00 [main] INFO com.ui.listeners.TestListener [smoke, e2e, sanity] 
+2026-02-09 09:03:00 [main] INFO com.ui.pages.MyAccountPage Finding element with the locatorBy.xpath: //input[@id='search_query_top'] 
+2026-02-09 09:03:00 [main] INFO com.ui.pages.MyAccountPage Element found and now enter textMen's Wallet 
+2026-02-09 09:03:00 [main] INFO com.ui.pages.MyAccountPage Finding element with the locatorBy.xpath: //input[@id='search_query_top'] 
+2026-02-09 09:03:00 [main] INFO com.ui.pages.MyAccountPage Element found and now enter text 
+2026-02-09 09:03:00 [main] INFO com.ui.pages.SearchResultPage Finding all elements with the locatorBy.xpath: //h5[@itemprop='name']/a 
+2026-02-09 09:03:01 [main] INFO com.ui.pages.SearchResultPage Elements found and now printing  the list of elements 
+2026-02-09 09:03:01 [main] ERROR com.ui.listeners.TestListener veerifyProductSearchTest FAILED 
+2026-02-09 09:03:01 [main] ERROR com.ui.listeners.TestListener true expected [true] but found [false] 
+2026-02-09 09:03:01 [main] INFO com.ui.listeners.TestListener Capturing screenshot for the failed tests 
+2026-02-09 09:03:01 [main] INFO com.ui.listeners.TestListener Attaching the screenshot to the html report 
+2026-02-09 09:03:01 [main] INFO com.ui.listeners.TestListener Test Suite Completed 

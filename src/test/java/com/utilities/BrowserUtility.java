@@ -3,11 +3,14 @@ package com.utilities;
 import java.io.File;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
+import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
 
 import org.apache.commons.io.FileUtils;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
@@ -148,6 +151,36 @@ public abstract class BrowserUtility {
 
 	}
 
+	public String getVisibleText(WebElement element) {
+		logger.info("Finding element with the locator" + element);
+		logger.info("Returning  the visible text" + element.getText());
+		return element.getText();
+
+	}
+
+	public List<String> getAllVisibleText(By locator) {
+		logger.info("Finding all elements with the locator" + locator);
+		List<WebElement> elementList = driver.get().findElements(locator);
+
+		logger.info("Elements found and now printing  the list of elements");
+		List<String> visibleTextList = new ArrayList<String>();
+		for (WebElement element : elementList) {
+			System.out.println(getVisibleText(element));
+			visibleTextList.add(getVisibleText(element));
+		}
+		return visibleTextList;
+	}
+
+	public void enterSpecialKey(By locator, Keys keyToEnter) {
+		logger.info("Finding element with the locator" + locator);
+
+		WebElement element = driver.get().findElement(locator);
+		logger.info("Element found and now enter text" + keyToEnter);
+
+		element.sendKeys(keyToEnter);
+
+	}
+
 	public String takeScreenshot(String name) {
 
 		TakesScreenshot screenShot = (TakesScreenshot) driver.get();
@@ -156,7 +189,7 @@ public abstract class BrowserUtility {
 		Date date = new Date();
 		SimpleDateFormat format = new SimpleDateFormat("HH-mm=ss");
 		String timeStamp = format.format(date);
-		String path = System.getProperty("user.dir") + "//screenshots//" + name + " - " + " timeStamp " + ".png";
+		String path = "./screenshots/" + name + " - " + timeStamp + ".png";
 		File screenShotFile = new File(path);
 		try {
 			FileUtils.copyFile(screenShotData, screenShotFile);

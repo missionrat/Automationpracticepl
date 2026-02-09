@@ -26,15 +26,15 @@ public class TestBase {
 	@Parameters({ "browser", "isLambdaTest", "isHeadless" })
 	@BeforeMethod(description = "Load the homepage of the website")
 	public void setUp(@Optional("chrome") String browser, @Optional("false") boolean isLambdaTest,
-			@Optional("true") boolean isHeadless, ITestResult result) {
+			@Optional("false") boolean isHeadless, ITestResult result) {
 		this.isLambdaTest = isLambdaTest;
 		WebDriver lambdaDriver;
 		if (isLambdaTest) {
-			lambdaDriver = LambdaTestUtility.initializeLambdaTestSession(browser, result.getMethod().getMethodName());
+			lambdaDriver = LambdaTestUtility.initializeLambdaTestSession("chrome", result.getMethod().getMethodName());
 			homepg = new HomePage(lambdaDriver);
 		} else {// run the test on local machine
 			logger.info("Load the homepage of the website");
-			homepg = new HomePage(Browser.valueOf(browser.toUpperCase()), true);
+			homepg = new HomePage(Browser.valueOf("chrome".toUpperCase()), isHeadless);
 		}
 	}
 
