@@ -42,12 +42,14 @@ public class TestBase {
 		return homepg;
 	}
 
-	/*
-	 * @AfterMethod(description = "Tear Down the browser") public void tearDown() {
-	 * if (isLambdaTest) { LambdaTestUtility.quitSession(); } else { homepg.quit();
-	 * }
-	 * 
-	 * }
-	 */
+	@AfterMethod(description = "Tear Down the browser")
+	public void tearDown() {
+		if (isLambdaTest) {
+			LambdaTestUtility.quitSession();
+		} else {
+			homepg.quit();
+		}
+
+	}
 
 }
