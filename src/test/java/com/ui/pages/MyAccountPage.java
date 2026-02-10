@@ -12,6 +12,8 @@ public final class MyAccountPage extends BrowserUtility {
 
 	private static final By SEARCH_TEXT_BOX_LOCATOR = By.xpath("//input[@id='search_query_top']");
 
+	private static final By ADD_NEW_ADDRESS_LINK_LOCATOR = By.xpath("//a[@title='Add my first address']");
+
 	public MyAccountPage(WebDriver driver) {
 		super(driver);
 		// TODO Auto-generated constructor stub
@@ -30,4 +32,11 @@ public final class MyAccountPage extends BrowserUtility {
 		return searchResultPage;
 
 	}
+
+	public AddressNewFirstPage navigateToAddressPage() {
+		ClickOn(ADD_NEW_ADDRESS_LINK_LOCATOR);
+		AddressNewFirstPage addresspage = new AddressNewFirstPage(getDriver());
+		return addresspage;
+	}
+
 }

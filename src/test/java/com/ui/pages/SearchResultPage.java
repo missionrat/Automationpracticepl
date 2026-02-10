@@ -32,4 +32,10 @@ public class SearchResultPage extends BrowserUtility {
 
 	}
 
+	public ProductDetailPage clickonProductAtIndex(int index) {
+		ClickOn(getAllElements(ALL_PRODUCT_LISTS_NAME).get(index));
+		ProductDetailPage productDetailpage = new ProductDetailPage(getDriver());
+		return productDetailpage;
+	}
+
 }
