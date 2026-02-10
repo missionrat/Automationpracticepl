@@ -1,29 +1,33 @@
-2026-02-10 10:05:41 [main] INFO com.ui.tests.ProductCheckoutTest Load the homepage of the website 
-2026-02-10 10:05:41 [main] INFO com.ui.pages.HomePage Launching browser forCHROME 
-2026-02-10 10:05:49 [main] INFO com.ui.pages.HomePage Navigating to the Website:https://automationpractice.techwithjatin.com/ 
-2026-02-10 10:05:57 [main] INFO com.ui.pages.HomePage Trying to perform click actio on sign in page 
-2026-02-10 10:05:57 [main] INFO com.ui.pages.HomePage Finding element with the locatorBy.xpath: //a[contains(text(),'Sign')] 
-2026-02-10 10:05:58 [main] INFO com.ui.pages.HomePage Element found and performing click actionBy.xpath: //a[contains(text(),'Sign')] 
-2026-02-10 10:05:59 [main] INFO com.ui.pages.LoginPage Finding element with the locatorBy.xpath: //input[@id='email'] 
-2026-02-10 10:05:59 [main] INFO com.ui.pages.LoginPage Element found and clearing the textBy.xpath: //input[@id='email'] 
-2026-02-10 10:05:59 [main] INFO com.ui.pages.LoginPage Finding element with the locatorBy.xpath: //input[@id='email'] 
-2026-02-10 10:05:59 [main] INFO com.ui.pages.LoginPage Element found and now enter textneyef43651@azeriom.com 
-2026-02-10 10:05:59 [main] INFO com.ui.pages.LoginPage Finding element with the locatorBy.xpath: //input[@id='passwd'] 
-2026-02-10 10:05:59 [main] INFO com.ui.pages.LoginPage Element found and clearing the textBy.xpath: //input[@id='passwd'] 
-2026-02-10 10:05:59 [main] INFO com.ui.pages.LoginPage Finding element with the locatorBy.xpath: //input[@id='passwd'] 
-2026-02-10 10:05:59 [main] INFO com.ui.pages.LoginPage Element found and now enter textnaman@2026 
-2026-02-10 10:05:59 [main] INFO com.ui.pages.LoginPage Finding element with the locatorBy.xpath: //button[@id='SubmitLogin'] 
-2026-02-10 10:05:59 [main] INFO com.ui.pages.LoginPage Element found and performing click actionBy.xpath: //button[@id='SubmitLogin'] 
-2026-02-10 10:06:00 [main] INFO com.ui.pages.MyAccountPage Finding element with the locatorBy.xpath: //input[@id='search_query_top'] 
-2026-02-10 10:06:00 [main] INFO com.ui.pages.MyAccountPage Element found and now enter textPrinted Summer Dress 
-2026-02-10 10:06:00 [main] INFO com.ui.pages.MyAccountPage Finding element with the locatorBy.xpath: //input[@id='search_query_top'] 
-2026-02-10 10:06:00 [main] INFO com.ui.pages.MyAccountPage Element found and now enter text 
-2026-02-10 10:06:00 [main] INFO com.ui.pages.SearchResultPage Finding all elements with the locatorBy.xpath: //h5[@itemprop='name']/a 
-2026-02-10 10:06:01 [main] INFO com.ui.pages.SearchResultPage Elements found and now printing  the list of elements 
-2026-02-10 10:06:01 [main] INFO com.ui.pages.SearchResultPage Element found and performing click action[[ChromeDriver: chrome on windows (1e85d0e17b31c94f42e89b19b1659bc7)] -> xpath: //h5[@itemprop='name']/a] 
-2026-02-10 10:06:01 [main] INFO com.ui.pages.ProductDetailPage Finding element with the locatorBy.xpath: //select[@id='group_1'] 
-2026-02-10 10:06:01 [main] INFO com.ui.pages.ProductDetailPage Selecting the optionL 
-2026-02-10 10:06:02 [main] INFO com.ui.pages.ProductDetailPage Finding element with the locatorBy.xpath: //button[@name='Submit'] 
-2026-02-10 10:06:02 [main] INFO com.ui.pages.ProductDetailPage Element found and performing click actionBy.xpath: //button[@name='Submit'] 
-2026-02-10 10:06:02 [main] INFO com.ui.pages.ProductDetailPage Finding element with the locatorBy.xpath: //a[@title='Proceed to checkout'] 
-2026-02-10 10:06:02 [main] INFO com.ui.pages.ProductDetailPage Element found and performing click actionBy.xpath: //a[@title='Proceed to checkout'] 
+2026-02-10 11:27:38 [main] INFO com.ui.tests.ProductCheckoutTest Load the homepage of the website 
+2026-02-10 11:27:38 [main] INFO com.ui.pages.HomePage Launching browser forCHROME 
+2026-02-10 11:27:43 [main] INFO com.ui.pages.HomePage Navigating to the Website:https://automationpractice.techwithjatin.com/ 
+2026-02-10 11:27:50 [main] INFO com.ui.pages.HomePage Trying to perform click actio on sign in page 
+2026-02-10 11:27:50 [main] INFO com.ui.pages.HomePage Finding element with the locatorBy.xpath: //a[contains(text(),'Sign')] 
+2026-02-10 11:27:50 [main] INFO com.ui.pages.HomePage Element found and performing click actionBy.xpath: //a[contains(text(),'Sign')] 
+2026-02-10 11:27:51 [main] INFO com.ui.pages.LoginPage Finding element with the locatorBy.xpath: //input[@id='email'] 
+2026-02-10 11:27:51 [main] INFO com.ui.pages.LoginPage Element found and clearing the textBy.xpath: //input[@id='email'] 
+2026-02-10 11:27:51 [main] INFO com.ui.pages.LoginPage Finding element with the locatorBy.xpath: //input[@id='email'] 
+2026-02-10 11:27:51 [main] INFO com.ui.pages.LoginPage Element found and now enter textneyef43651@azeriom.com 
+2026-02-10 11:27:51 [main] INFO com.ui.pages.LoginPage Finding element with the locatorBy.xpath: //input[@id='passwd'] 
+2026-02-10 11:27:51 [main] INFO com.ui.pages.LoginPage Element found and clearing the textBy.xpath: //input[@id='passwd'] 
+2026-02-10 11:27:52 [main] INFO com.ui.pages.LoginPage Finding element with the locatorBy.xpath: //input[@id='passwd'] 
+2026-02-10 11:27:52 [main] INFO com.ui.pages.LoginPage Element found and now enter textnaman@2026 
+2026-02-10 11:27:52 [main] INFO com.ui.pages.LoginPage Finding element with the locatorBy.xpath: //button[@id='SubmitLogin'] 
+2026-02-10 11:27:52 [main] INFO com.ui.pages.LoginPage Element found and performing click actionBy.xpath: //button[@id='SubmitLogin'] 
+2026-02-10 11:27:52 [main] INFO com.ui.pages.MyAccountPage Finding element with the locatorBy.xpath: //input[@id='search_query_top'] 
+2026-02-10 11:27:53 [main] INFO com.ui.pages.MyAccountPage Element found and now enter textPrinted Summer Dress 
+2026-02-10 11:27:53 [main] INFO com.ui.pages.MyAccountPage Finding element with the locatorBy.xpath: //input[@id='search_query_top'] 
+2026-02-10 11:27:53 [main] INFO com.ui.pages.MyAccountPage Element found and now enter text 
+2026-02-10 11:27:53 [main] INFO com.ui.pages.SearchResultPage Finding all elements with the locatorBy.xpath: //h5[@itemprop='name']/a 
+2026-02-10 11:27:53 [main] INFO com.ui.pages.SearchResultPage Elements found and now printing  the list of elements 
+2026-02-10 11:27:53 [main] INFO com.ui.pages.SearchResultPage Element found and performing click action[[ChromeDriver: chrome on windows (26c3e2499c75149d6cf739f4b75afbfb)] -> xpath: //h5[@itemprop='name']/a] 
+2026-02-10 11:27:54 [main] INFO com.ui.pages.ProductDetailPage Finding element with the locatorBy.xpath: //select[@id='group_1'] 
+2026-02-10 11:27:54 [main] INFO com.ui.pages.ProductDetailPage Selecting the optionL 
+2026-02-10 11:27:54 [main] INFO com.ui.pages.ProductDetailPage Finding element with the locatorBy.xpath: //button[@name='Submit'] 
+2026-02-10 11:27:54 [main] INFO com.ui.pages.ProductDetailPage Element found and performing click actionBy.xpath: //button[@name='Submit'] 
+2026-02-10 11:27:54 [main] INFO com.ui.pages.ProductDetailPage Finding element with the locatorBy.xpath: //a[@title='Proceed to checkout'] 
+2026-02-10 11:27:55 [main] INFO com.ui.pages.ProductDetailPage Element found and performing click actionBy.xpath: //a[@title='Proceed to checkout'] 
+2026-02-10 11:27:56 [main] INFO com.ui.pages.ShoppingCartSummaryPage Finding element with the locatorBy.xpath: //p[contains(@class,'cart_navigation')]/a[@title='Proceed to checkout'] 
+2026-02-10 11:27:56 [main] INFO com.ui.pages.ShoppingCartSummaryPage Element found and performing click actionBy.xpath: //p[contains(@class,'cart_navigation')]/a[@title='Proceed to checkout'] 
+2026-02-10 11:27:56 [main] INFO com.ui.pages.ConfirmAddressPage Finding element with the locatorBy.xpath: //button[@name='processAddress'] 
+2026-02-10 11:27:56 [main] INFO com.ui.pages.ConfirmAddressPage Element found and performing click actionBy.xpath: //button[@name='processAddress'] 

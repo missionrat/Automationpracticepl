@@ -2,6 +2,7 @@ package com.ui.tests;
 
 import java.sql.Driver;
 
+import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
@@ -23,8 +24,10 @@ public class ProductCheckoutTest extends TestBase {
 
 	@Test(description = "Verify if the logged in user is able to buy a dress", groups = { "e2e", "sanity", "smoke" })
 	public void checkOutTest() {
-		searchResultPage.clickonProductAtIndex(1).changeSize(L).addProductToCart().proceedToCheckout();
-
+		String result = searchResultPage.clickonProductAtIndex(1).changeSize(L).addProductToCart().proceedToCheckout()
+				.goToConfirmAddressPage().goToShippmentPage().goToPaymentPage().makePaymentByWire();
+		// System.out.println(result);
+		Assert.assertTrue(result.contains("complete"));
 	}
 
 }

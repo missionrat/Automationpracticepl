@@ -144,6 +144,16 @@ public abstract class BrowserUtility {
 
 	}
 
+	public void ClickOnCheckbox(By locator) {
+		logger.info("Finding element with the locator" + locator);
+		// WebElement element = driver.get().findElement(locator);
+		WebElement element = webDriverWait.until(ExpectedConditions.visibilityOfElementLocated(locator));
+		logger.info("Element found and performing click action" + locator);
+
+		element.click();
+
+	}
+
 	public void ClickOn(WebElement element) {
 
 		logger.info("Element found and performing click action" + element);
